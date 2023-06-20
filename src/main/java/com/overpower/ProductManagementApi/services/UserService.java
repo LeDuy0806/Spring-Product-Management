@@ -56,4 +56,8 @@ public class UserService {
         userRepository.deleteById(id);
         return String.format("User with id %s has been deleted", id);
     }
+
+    public List<User> getUserByRole(List<String> roles) {
+        return userRepository.findByRoleIn(roles);
+    }
 }

@@ -2,7 +2,6 @@ package com.overpower.ProductManagementApi.controller;
 
 import com.overpower.ProductManagementApi.models.User;
 import com.overpower.ProductManagementApi.services.UserService;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

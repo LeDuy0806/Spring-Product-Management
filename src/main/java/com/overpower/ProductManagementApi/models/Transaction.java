@@ -6,28 +6,22 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.LastModifiedDate;
-import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
-
-@Document(collection = "users")
+@Document(collection = "transactions")
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
-public class User {
+@AllArgsConstructor
+public class Transaction {
     @Id
     private String id;
-    private String name;
-    private String city;
-    private String country;
-    private String occupation;
-    private String phoneNumber;
-    @Indexed(unique = true)
-    private String email;
-    private String role;
+    private String userId;
+    private String cost;
+    private List<String> products;
     @CreatedDate
     @Field("createdAt")
     private LocalDateTime createdAt;
@@ -35,9 +29,4 @@ public class User {
     @LastModifiedDate
     @Field("updatedAt")
     private LocalDateTime updatedAt;
-
-
-    public User(User user) {
-
-    }
 }
