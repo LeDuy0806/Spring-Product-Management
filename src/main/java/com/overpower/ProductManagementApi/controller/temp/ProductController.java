@@ -1,4 +1,4 @@
-package com.overpower.ProductManagementApi.controller;
+package com.overpower.ProductManagementApi.controller.temp;
 
 import com.overpower.ProductManagementApi.models.ProductStat;
 import com.overpower.ProductManagementApi.models.Products;
