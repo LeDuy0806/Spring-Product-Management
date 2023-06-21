@@ -16,6 +16,7 @@ import java.util.Map;
 public class OverallStat {
     @Id
     private String id;
+    private Integer totalCustomers;
     private Integer yearlySalesTotal;
     private Integer yearlyTotalSoldUnits;
     private Integer year;
