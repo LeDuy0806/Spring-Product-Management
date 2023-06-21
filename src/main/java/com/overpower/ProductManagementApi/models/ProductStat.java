@@ -19,24 +19,4 @@ public class ProductStat {
     private List<DailyData> dailyData;
 }
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-class MonthlyData {
-    private String month;
-    private int totalSales;
-    private int totalUnits;
-    private String id;
-}
-
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-class DailyData {
-    private String date;
-    private int totalSales;
-    private int totalUnits;
-    private String id;
-}
-
 
