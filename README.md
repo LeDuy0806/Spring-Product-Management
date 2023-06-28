@@ -2,8 +2,8 @@ SpringProductManegement is a [Spring Boot](https://spring.io/guides/gs/spring-bo
 
 
 ```
-git clone https://github.com/spring-projects/spring-petclinic.git
-cd spring-petclinic
+git clone https://github.com/LeDuy0806/Spring-Product-Management.git
+cd LeDuy0806/Spring-Product-Management
 ./mvnw package
 java -jar target/*.jar
 ```
