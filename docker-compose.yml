@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  myapp:
+    build:
+      context: .  # Đường dẫn đến thư mục chứa Dockerfile
+      dockerfile: Dockerfile  # Tên của Dockerfile
+    ports:
+      - 8080:8080  # Mở cổng 8080 trên máy host để kết nối với ứng dụng
+    environment:
+      - SPRING_PROFILES_ACTIVE=production  # Đặt biến môi trường cho ứng dụng
+    volumes:
+      - ./logs:/app/logs  # Liên kết thư mục logs trên máy host với thư mục logs trong container
